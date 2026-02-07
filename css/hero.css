@@ -40,3 +40,12 @@
   cursor: pointer;
   background-color: transparent;
 }
+.follow-icons a {
+  font-size: 26px;
+  color: #333;
+  margin-right: 15px;
+}
+
+.follow-icons a:hover {
+  color: #0a66c2;
+}
