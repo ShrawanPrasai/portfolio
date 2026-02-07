@@ -39,7 +39,14 @@
   border: 1px solid black;
   cursor: pointer;
   background-color: transparent;
+  margin-top: 20px;
 }
+.follow-icon {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+  
 .follow-icons a {
   font-size: 34px;
   color: #333;
