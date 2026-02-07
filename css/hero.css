@@ -41,11 +41,15 @@
   background-color: transparent;
 }
 .follow-icons a {
-  font-size: 26px;
+  font-size: 34px;
   color: #333;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .follow-icons a:hover {
   color: #0a66c2;
+}
+.social-btn:hover,
+.follow-icons a:hover {
+  transform: scale(1.08);
 }
