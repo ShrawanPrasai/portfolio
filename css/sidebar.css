@@ -123,35 +123,53 @@ form {
 .sidebar__list__item:hover::after {
   width: 120%;
 }
-
-.sidebar__copyright {
-  padding: 0 20px;
-  margin-bottom: 30px;
-  color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  font-size: 12px;
-  line-height: 2;
+.social-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.sidebar__copyright > span {
-  color: #2c98f0;
+.connect-text {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 0px;
+  color: #222;
+  letter-spacing: 0.5px;
 }
-.follow-icon {
+.follow-icons {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-top: 15px;
-  
-.follow-icons a {
-  font-size: 34px;
-  color: #333;
-  margin-right: 20px;
+  margin-top: 10px;
 }
 
-.follow-icons a:hover {
+.follow-icons a {
+  font-size: 20px;
+  color: #333;
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease;
+}
+
+.follow-icons a[href*="github"]:hover {
+  color: #000;
+  transform: scale(1.1);
+}
+
+.follow-icons a[href*="linkedin"]:hover {
   color: #0a66c2;
+  transform: scale(1.1);
 }
-.social-btn:hover,
-.follow-icons a:hover {
-  transform: scale(1.08);
+
+.follow-icons a[href*="instagram"]:hover {
+  color: #e4405f;
+  transform: scale(1.1);
 }
+
+.follow-icons a {
+  transition:
+    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.2s ease;
+}
+
